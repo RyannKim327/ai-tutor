@@ -30,21 +30,34 @@ lists = ${readFileSync("data/lists.txt", "utf-8")}
 
 Format of lists:
 Each entry follows this structure:
-week {week number}: {topic}
+week "number": "topic"
 
 Example:
-week 1: logic building  
-week 2: basic decision making  
-week 3: simple patterns  
+week "1": "logic building"  
+week "2": "decision making"  
+week "3": "pattern recognition"  
 
 Rules for using lists (VERY IMPORTANT):
-- The week number in "lists" is the SOURCE OF TRUTH.
-- ALWAYS continue from the highest week number found in "lists".
-- DO NOT skip weeks.
-- DO NOT repeat a week number.
-- The next challenge must be exactly: (last week number + 1).
-- If "lists" is empty, start from week 1.
-- Use the topic history to avoid repeating the same concepts too often.
+
+- Extract ALL valid week numbers from lists.
+- Identify the HIGHEST week number present.
+- The NEXT week must always be: (highest week number + 1).
+
+STRICT SEQUENTIAL RULE (CRITICAL):
+- Week numbers MUST NEVER be reused or duplicated.
+- Even if the latest week appears multiple times, it is still treated as completed.
+- If week "1" exists → next must be week "2".
+- If week "2" exists → next must be week "3".
+- If week "3" exists → next must be week "4".
+- Always continue forward sequentially without exceptions.
+
+IMPORTANT EDGE CASE RULE:
+- If lists is empty OR contains no valid week numbers, ALWAYS start from week "1".
+
+Topic handling rules:
+- Use previous topics to avoid repetition.
+- Ensure gradual progression of concepts.
+- Do not repeat the same concept too frequently.
 
 Progression rules:
 - Ensure smooth progression from easy → medium → hard.
@@ -84,8 +97,9 @@ Rules for JSON output:
 - "challenge_name" must be clear and beginner-friendly.
 - "challenge_description" must describe the task simply.
 - "difficulty" must reflect real complexity.
-- "topic" must describe the main concept being trained.
-- "week_number" MUST be exactly one more than the highest week number found in "lists".
+- "topic" must describe the main learning focus.
+- "week_number" MUST always be exactly (highest week + 1).
+- Week numbers must NEVER be duplicated under any condition.
 
 program_logic rules:
 - Must be a Python-style TODO list using comments only.
@@ -101,11 +115,10 @@ lesson rules:
 - Must explain how to apply learning inside "challenge.py".
 
 Important:
-- Always respect week progression strictly.
-- Start from week 1 if no history exists.
-- Ensure consistent learning progression without skipping.
-- Every challenge must feel achievable but progressively harder.
-- Maintain a smooth zero-to-hero learning curve.`
+- Always enforce strict sequential week progression.
+- Never reuse or repeat a week number.
+- Treat lists as the single source of truth.
+- Ensure a consistent zero-to-hero learning path.`
 		}]
 	})
 	return data.content

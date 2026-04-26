@@ -34,8 +34,8 @@ jobs:
       - run: git config --global user.email "${{ secrets.EMAIL }}"
       - name: NODE RUN
         run: npm start
+      - run: git config --global --add safe.directory /home/runner/work/ai-tutor/ai-tutor
       - name: GIT PUSH
-        run: git config --global --add safe.directory /home/runner/work/ai-tutor/ai-tutor
         run: git push
         env:
           API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}

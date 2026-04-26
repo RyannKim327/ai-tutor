@@ -6,6 +6,7 @@ import add from "./script/tolist"
 (async () => {
 	const api = await ai()
 	const ext = extractor(api)
+	console.log(ext)
 	add(ext.week_number, ext.challenge_name)
-	addChallenge(ext)
+	await addChallenge(ext)
 })()

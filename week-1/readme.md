@@ -1,6 +1,6 @@
-# Week 2: Counting Patterns
+# Week 1: Counting Patterns
 
-Welcome to Week 2 of your programming journey! This week, we will explore counting and how we can classify numbers as either 'even' or 'odd'. 
+Welcome to Week 1 of your programming journey! This week, we will explore counting and how we can classify numbers as either 'even' or 'odd'. 
 
 ### Understanding the Concept
 Counting is one of the simplest forms of programming. Think about how you count objects in real life. For instance, if you have ten apples, you would count each apple one by one: 1 apple, 2 apples, and so on until you reach 10. In programming, we can tell the computer to do this counting for us.

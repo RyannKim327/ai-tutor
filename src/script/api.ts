@@ -2,6 +2,7 @@ import axios from "axios";
 import { readFileSync } from "fs"
 
 export default async function ai() {
+	console.log(readFileSync("data/lists.txt", "utf-8"))
 	const { data } = await axios.post("https://api-mpop-backend.onrender.com/ai/chat", {
 		messages: [{
 			role: "user",
@@ -29,35 +30,40 @@ You will receive a list called:
 lists = ${readFileSync("data/lists.txt", "utf-8")}
 
 Format of lists:
-Each entry follows this structure:
-week "number": "topic"
+Each line follows this structure:
+
+week {number}: {topic or challenge name}
 
 Example:
-week "1": "logic building"  
-week "2": "decision making"  
-week "3": "pattern recognition"  
+week 1: sample challenge  
+week 2: basic decision making  
+week 3: pattern recognition  
 
-Rules for using lists (VERY IMPORTANT):
+Rules for parsing lists (VERY IMPORTANT):
 
-- Extract ALL valid week numbers from lists.
+- Extract the week number from the LEFT side of ":".
+- Extract the topic/challenge name from the RIGHT side of ":".
 - Identify the HIGHEST week number present.
 - The NEXT week must always be: (highest week number + 1).
 
-STRICT SEQUENTIAL RULE (CRITICAL):
+STRICT SEQUENTIAL RULE:
 - Week numbers MUST NEVER be reused or duplicated.
-- Even if the latest week appears multiple times, it is still treated as completed.
-- If week "1" exists → next must be week "2".
-- If week "2" exists → next must be week "3".
-- If week "3" exists → next must be week "4".
 - Always continue forward sequentially without exceptions.
 
 IMPORTANT EDGE CASE RULE:
-- If lists is empty OR contains no valid week numbers, ALWAYS start from week "1".
+- If lists is empty OR contains no valid "week X:" entries, ALWAYS start from week 1.
+
+DUPLICATE PREVENTION RULE:
+- Do NOT generate a challenge that already exists in lists.
+- A duplicate means:
+  - Same challenge_name or topic meaning
+  - Same logical structure or learning pattern
+- Every new challenge must introduce a NEW concept or meaningful variation.
 
 Topic handling rules:
 - Use previous topics to avoid repetition.
 - Ensure gradual progression of concepts.
-- Do not repeat the same concept too frequently.
+- Do not repeat the same concept frequently.
 
 Progression rules:
 - Ensure smooth progression from easy → medium → hard.
@@ -98,8 +104,8 @@ Rules for JSON output:
 - "challenge_description" must describe the task simply.
 - "difficulty" must reflect real complexity.
 - "topic" must describe the main learning focus.
-- "week_number" MUST always be exactly (highest week + 1).
-- Week numbers must NEVER be duplicated under any condition.
+- "week_number" must always be exactly (highest week + 1).
+- Week numbers must NEVER be duplicated.
 
 program_logic rules:
 - Must be a Python-style TODO list using comments only.
@@ -117,6 +123,7 @@ lesson rules:
 Important:
 - Always enforce strict sequential week progression.
 - Never reuse or repeat a week number.
+- Never generate duplicate or near-duplicate challenges.
 - Treat lists as the single source of truth.
 - Ensure a consistent zero-to-hero learning path.`
 		}]

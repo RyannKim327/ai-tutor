@@ -1,2 +1,1 @@
-Week 1: Counting Patterns
-Week 2: Counting Under Pressure
+Week 1: Basic Counting and Classification (Odd or Even)

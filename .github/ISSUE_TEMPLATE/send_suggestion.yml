@@ -6,7 +6,7 @@ description: Share what Idea you want to add in the project
 
 title: "Suggest a Feature"
 
-labels: [suggestion]
+labels: [suggestion, enhancement]
 
 body:
   - type: input

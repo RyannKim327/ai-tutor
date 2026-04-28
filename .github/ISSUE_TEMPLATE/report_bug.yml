@@ -1,0 +1,28 @@
+# Credits to codetrybe for this invitation copy
+
+name: Report A Bug
+
+description: To send a bug encountered in the project
+
+title: "Report A Bug"
+
+labels: [bug]
+
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Enter your name here
+      placeholder: e.g Juan Dela Cruz
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Tell us or explain the bug/problem you encountered
+      description: Just explain the bug, and what you did before you encountered the bug.
+    validations:
+      required: true
+

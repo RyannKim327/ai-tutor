@@ -16,6 +16,10 @@ jobs:
       matrix:
         node-version: [22.x]
 
+    env:
+      PAGE_ID: ${{ secrets.PAGE_ID }}
+      FB_TOKEN: ${{ secrets.FB_TOKEN }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -46,3 +50,4 @@ jobs:
 
       - name: Push changes
         run: git push
+

@@ -9,10 +9,15 @@ title: "Report A Bug"
 labels: [bug]
 
 body:
-  - type: markdown
+  - type: input
     id: name
     attributes:
-      value: Report a Bug
+      label: Name
+      description: Enter your name here
+      placeholder: e.g Juan Dela Cruz
+    validations:
+      required: true
+      pattern: "^[a-zA-Z0-9]+$"
 
   - type: input
     id: bug

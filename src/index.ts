@@ -11,7 +11,7 @@ async function main() {
 		if (ext.week_number === undefined)
 			throw Error("No Week")
 		add(ext.week_number, ext.challenge_name)
-		postToFacebook(`Week #${ext.week_number} has arrived in ai-tutor, visit and explore another challenge from it thru: https://github.com/RyannKim327/ai-tutor/tree/main/week-${ext.week_number}`)
+		postToFacebook(`Week #${ext.week_number} has arrived in ai-tutor called: ${ext.challenge_name}.\n If you want to, just visit and explore another challenge from it thru: https://github.com/RyannKim327/ai-tutor/tree/main/week-${ext.week_number}`)
 		await addChallenge(ext)
 	} catch (e) {
 		main()

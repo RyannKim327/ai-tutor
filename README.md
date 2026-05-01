@@ -25,7 +25,7 @@ The AI ensures that the progression is strictly sequential, never reusing topics
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mrepol742/challenge.git
+   git clone https://github.com/RyannKim327/ai-tutor.git
    cd challenges
    ```
 2. Install dependencies:

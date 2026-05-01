@@ -9,15 +9,10 @@ title: "Suggest a Feature"
 labels: [suggestion, enhancement]
 
 body:
-  - type: input
+  - type: markdown
     id: name
     attributes:
-      label: Name
-      description: Enter your name here
-      placeholder: e.g Juan Dela Cruz
-    validations:
-      required: true
-      pattern: "^[a-zA-Z0-9]+$"
+      value: Suggest a Feature
 
   - type: input
     id: summary

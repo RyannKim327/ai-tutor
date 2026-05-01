@@ -17,6 +17,7 @@ body:
       placeholder: e.g Juan Dela Cruz
     validations:
       required: true
+      pattern: "^[a-zA-Z0-9]+$"
 
   - type: input
     id: bug
@@ -26,6 +27,7 @@ body:
       placeholder: e.g URL Error
     validations:
       required: true
+      pattern: "^[a-zA-Z0-9]+$"
 
   - type: textarea
     id: additional-context
@@ -34,4 +36,5 @@ body:
       description: Just explain the bug, and what you did before you encountered the bug.
     validations:
       required: true
+      pattern: "^[a-zA-Z0-9]+$"
 

@@ -17,6 +17,7 @@ body:
       placeholder: e.g Juan Dela Cruz
     validations:
       required: true
+      pattern: "^[a-zA-Z0-9]+$"
 
   - type: input
     id: summary
@@ -26,6 +27,7 @@ body:
       placeholder: e.g AI Update
     validations:
       required: true
+      pattern: "^[a-zA-Z0-9]+$"
 
   - type: textarea
     id: additional-context
@@ -34,4 +36,5 @@ body:
       description: Please make your explaination clear and direct, you may use examples if ever too.
     validations:
       required: true
+      pattern: "^[a-zA-Z0-9]+$"
 

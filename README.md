@@ -1,65 +1,84 @@
-# 🧠 AI-Powered Programming Challenges
+## 🧠 AI-Powered Programming Challenges
 
-Welcome to the **AI-Powered Programming Challenges** repository! This project is designed specifically for absolute beginners with zero prior experience in programming. Our goal is to help you learn how to program through a hands-on, "learning by doing" approach, powered by AI to ensure a gradual and sustainable learning path without burnout.
+Welcome to the **AI-Powered Programming Challenges** repository!
+
+This project is designed for **absolute beginners** with zero programming experience. It helps you learn programming through a hands-on, **logic-first approach**, focusing on understanding how to think like a programmer rather than just writing code.
+
+---
 
 ## 🚀 Overview
 
-The program automatically generates weekly challenges that guide you from absolute beginner to advanced programming understanding. Each week, the AI generates:
-1.  **A Lesson:** A markdown file (`readme.md`) explaining core concepts using real-life analogies and simple language.
-2.  **A Challenge:** A Python file (`challenge.py`) containing the logical structure and thinking steps for you to implement.
+This repository provides **weekly programming challenges** that guide you step-by-step from beginner to more advanced concepts.
 
-The AI ensures that the progression is strictly sequential, never reusing topics or week numbers, and scaling difficulty appropriately from Easy to Hard.
+Each week includes:
 
-## 🛠 How It Works
+- **📘 Lesson (`readme.md`)**  
+  Simple explanations of concepts using real-life analogies  
 
-1.  **AI Orchestration:** The system uses an LLM to act as an expert tutor. It reviews the history of completed challenges (stored in `data/lists.txt`) to determine the next logical step in your journey.
-2.  **Logic-First Learning:** We focus on logic, reasoning, and step-by-step thinking. The AI provides structured instructions in Python comments, and it's your job to translate that logic into code.
-3.  **Automated Generation:** The project is configured with GitHub Actions to potentially automate these challenges or can be run locally.
+- **💻 Challenge (`challenge.py`)**  
+  Logical steps and structure for you to implement in code  
+
+> The goal is simple: **learn programming by understanding logic and problem-solving.**
+
+---
 
 ## 🏁 Getting Started
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v16 or higher recommended)
-- [npm](https://www.npmjs.com/)
+### 🍴 Fork the Repository
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/RyannKim327/ai-tutor.git
-   cd challenges
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+1. Click the **Fork** button on this repository  
+2. This creates your own copy of the project  
 
-### Usage
-To generate the next weekly challenge:
-```bash
-npm start
-```
-This will:
-1. Consult the AI for the next lesson.
-2. Create a new directory (e.g., `week-2/`).
-3. Generate the `readme.md` (Lesson) and `challenge.py` (The actual task).
-4. Update `data/lists.txt` to track your progress.
+---
+
+### 🔄 Working on Your Fork
+
+- You will:
+  - Study the lessons
+  - Solve the challenges
+  - Commit and push your progress **to your own forked repository only**
+
+- You can:
+  - Sync your fork weekly to get the latest updates  
+  - Or follow updates from the [**MPOP Reverse II Facebook page**](https://fb.me/MPOP.2016) 
+
+---
+
+### 📌 How to Use This Repository
+
+- Treat this repository as your **learning guide**
+- Focus on:
+  - Understanding the logic
+  - Following the step-by-step instructions
+  - Writing the code yourself  
+
+> You are not required to modify how the system works—just use it to **practice and improve your thinking process**.
+
+---
 
 ## 🤝 Credits & Inspiration
 
-This project is inspired by and credits the following repository:
-- [mrepol742/challenge](https://github.com/mrepol742/challenge/)
+Inspired by:
 
-### Special Thanks to the Programmers:
-- **Melvin Jones Repol**
-- **John Paul Caigas**
-- **John Jeremy Antiguo**
-- **Ronald Torrejos Limpiado**
-- **Jay Patrick Cano**
-- **John Roy Calimlim**
-- **Genesis Fernandez**
-- **Ian Devinagracia**
-- **Jaime Agdon**
-- **Rovie Francisco**
+- https://github.com/mrepol742/challenge/
+
+---
+
+### 🙌 Special Thanks
+
+- Melvin Jones Repol  
+- John Paul Caigas  
+- John Jeremy Antiguo  
+- Ronald Torrejos Limpiado  
+- Jay Patrick Cano  
+- John Roy Calimlim  
+- Genesis Fernandez  
+- Ian Devinagracia  
+- Jaime Agdon  
+- Rovie Francisco  
+
+---
 
 ## 📜 License
-This project is licensed under the ISC License.
+
+This project is licensed under the **ISC License**.

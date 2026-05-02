@@ -1,3 +1,2 @@
 Week 1: Basic Counting and Classification (Odd or Even)
-Week 2: Classifying Shapes
-Week 3:
+Week 2:

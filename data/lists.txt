@@ -1,4 +1,3 @@
 Week 1: Basic Counting and Classification (Odd or Even)
 Week 2: Classifying Numbers by Range
-Week 3: Categorize Numbers by Range
-Week 4:
+Week 3:

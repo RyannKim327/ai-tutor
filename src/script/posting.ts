@@ -1,18 +1,19 @@
 import axios from "axios"
 import * as dotenv from "dotenv"
+import createToken from "./create_token"
 
 export default async function postToFacebook(message: string) {
 	dotenv.config()
 
 	const PAGE_ID: string = process.env.PAGE_ID
-	const PAGE_ACCESS_TOKEN: string = process.env.FB_TOKEN
+	const TOKEN: string = await createToken() as string
 
 	try {
 		const url = `https://graph.facebook.com/${PAGE_ID}/feed`
 		const response = await axios.post(url, null, {
 			params: {
 				message: message,
-				access_token: PAGE_ACCESS_TOKEN
+				access_token: TOKEN
 			}
 		})
 		console.log("Posted")

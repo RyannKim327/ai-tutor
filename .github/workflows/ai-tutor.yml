@@ -26,6 +26,10 @@ jobs:
         with:
           persist-credentials: true
 
+      - name: Syncing Repository
+        run: git fetch origin main
+        run: git pull origin main
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:

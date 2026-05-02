@@ -27,7 +27,7 @@ jobs:
           persist-credentials: true
 
       - name: Syncing Repository
-        run|
+        run: |
           git fetch origin main
           git pull origin main
 

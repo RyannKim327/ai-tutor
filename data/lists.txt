@@ -1,4 +1,3 @@
 Week 1: Basic Counting and Classification (Odd or Even)
-
- Identifying Prime Numbers
-Week - 3:
+Week 2: Classifying Shapes
+Week 3:

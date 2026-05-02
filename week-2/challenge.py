@@ -1,13 +1,11 @@
 """
-Topic: Number Classification
-Difficulty: medium
-Determine if a number is prime. A prime number is a number greater than 1 that has no divisors other than 1 and itself.
+Topic: Basic Shape Recognition
+Difficulty: easy
+Identify and classify different shapes based on their properties.
 """
 
-1. Start with a number from the user.
-2. Check if the number is less than or equal to 1. If yes, it's not prime.
-3. Assume the number is prime unless proven otherwise.
-4. Loop from 2 to the square root of the number.
-5. For each number in this loop, check if it divides the original number with no remainder.
-6. If it does, the number is not prime. Break the loop and indicate not prime.
-7. If the loop completes without finding any divisors, indicate that it is prime.
+# Start by identifying the properties of common shapes (circle, square, triangle, rectangle)
+# Gather input about a shape's properties (number of sides, angles)
+# Use the properties to determine which shape it is
+# Classify the shape as either a 'circle', 'triangle', 'square', 'rectangle', or 'unknown'
+# Output the classification result

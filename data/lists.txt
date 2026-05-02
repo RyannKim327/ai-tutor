@@ -1,2 +1,4 @@
 Week 1: Basic Counting and Classification (Odd or Even)
 Week 2:
+ Understanding Odd and Even Numbers
+Week - 2:

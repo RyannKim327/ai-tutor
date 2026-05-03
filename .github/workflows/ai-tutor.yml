@@ -37,6 +37,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: npm
 
+      - name: Installation of NPM Check Updates and Execution
+        run: |
+          npm install -g npm-check-uptates
+          ncu -u
+
       - name: Install dependencies
         run: npm ci
 

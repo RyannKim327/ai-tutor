@@ -1,10 +1,8 @@
 import axios from "axios"
-import * as dotenv from "dotenv"
 
-export default async function createToken() {
-	dotenv.config()
+export default async function createToken(TOKEN: string) {
 	try {
-		const PAGE_ACCESS_TOKEN: string = process.env.FB_TOKEN
+		const PAGE_ACCESS_TOKEN: string = TOKEN
 		const url = `https://graph.facebook.com/v25.0/me/accounts`
 		const response = await axios.get(url, {
 			params: {
@@ -18,8 +16,13 @@ export default async function createToken() {
 				transport: "cors"
 			}
 		})
-		return response.data.data[0].access_token
+		if (Array.isArray(response.data.data)) {
+			return response.data.data[0].access_token
+		} else {
+			console.error(response?.data as string)
+		}
 	} catch (e) {
-		createToken()
+		console.error(e)
+		createToken(TOKEN)
 	}
 }

@@ -7,10 +7,22 @@
     "start": "npx tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "ai teacher",
+    "automation",
+    "mentorship",
+    "programming"
+  ],
   "author": "RyannKim327",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RyannKim327/ai-tutor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyannKim327/ai-tutor.git"
+  },
   "dependencies": {
     "axios": "^1.15.2",
     "dotenv": "^17.4.2"

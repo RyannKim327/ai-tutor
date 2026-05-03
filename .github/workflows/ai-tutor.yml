@@ -39,7 +39,7 @@ jobs:
 
       - name: Installation of NPM Check Updates and Execution
         run: |
-          npm install -g npm-check-uptates
+          npm install -g npm-check-updates
           ncu -u
 
       - name: Install dependencies

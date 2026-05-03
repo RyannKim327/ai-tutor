@@ -66,16 +66,24 @@ Inspired by:
 
 ### 🙌 Special Thanks
 
-- Melvin Jones Repol  
-- John Paul Caigas  
-- John Jeremy Antiguo  
-- Ronald Torrejos Limpiado  
-- Jay Patrick Cano  
-- John Roy Calimlim  
-- Genesis Fernandez  
-- Ian Devinagracia  
-- Jaime Agdon  
-- Rovie Francisco  
+| Mentors/Inspirations | Developers/Debuggers |
+| ----- | ----- |
+| Melvin Jones Repol | Carlos Ragudo |
+| John Paul Caigas | John Manuel Andog |
+| John Jeremy Antiguo | |
+| Ronald Torrejos Limpiado | | 
+| Jay Patrick Cano  | |
+| John Roy Calimlim  | |
+| Genesis Fernandez  | |
+| Ian Devinagracia  | |
+| Jaime Agdon  | |
+| Rovie Francisco | |
+| Sanz Dinopol | |
+| Fortzkie Tuneskie | |
+| PinoyDen Community | |
+| XDA-Developers | |
+| Symbianize | |
+| DroidModifs Community | |
 
 ---
 

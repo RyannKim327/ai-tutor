@@ -1,23 +1,22 @@
-# Lesson: Classifying Numbers by Range
+# Classifying Numbers by Range
 
-In this week's lesson, we will focus on classifying numbers into different categories. Just like how store items can be categorized as 'snacks', 'drinks', or 'ready-to-eat meals', numbers can also be grouped into 'low', 'medium', and 'high'. 
+In this lesson, we will explore how to classify numbers into different categories based on their size. This is similar to how we classify apples by size: small, medium, and large. For instance, if you go to a grocery store, you might see apples that are labeled as small, medium, or large based on their weight or diameter.
 
-### Concept Explanation
-1. **Understanding Categories**: Each category will have a range of numbers. For example:
-   - Low: 1 - 10
-   - Medium: 11 - 20
-   - High: 21 and above
+### Understanding Number Ranges
 
-2. **Decision Making with Logic**: Think of it like sorting your clothes. You have different sections in your closet. You put shirts in one area, pants in another, and jackets in yet another. Similarly, we will check where a number fits within our defined ranges.
+Just like in the grocery store, numbers can also be grouped into 'categories' or 'ranges'. The ranges we will use are as follows:
+- **Small**: Numbers from 1 to 10
+- **Medium**: Numbers from 11 to 20
+- **Large**: Numbers from 21 and above.
 
-3. **Sequential Steps**: We will create a process that takes a number, checks which category it belongs to, and then classifies it accordingly.
+### How to Think About It
+In this task, your goal is to determine which category a number belongs to. You will need to think about:
+1. How to describe ranges (i.e., what is included in small, medium, and large).
+2. How to check which range a number falls into. For instance, if I pick the number 15, you should know it's 'medium'. 
+3. How to express this thought process step-by-step in your program.
 
-### Applying Your Learning
-- Start by carefully thinking about the ranges you want to define for each category.
-- Visualize the process in your mind like a flowchart: First, you receive a number -> check if it’s low, medium, or high -> then print the result.
+### Estimated Completion Time
+This challenge should take approximately 3-5 days. Spend the first couple of days thinking through how to structure your logic, and the rest practicing by classifying various numbers.
 
-### Estimated Completion Time: 3–5 days
-- Spend a couple of days thinking about the logic, then a few more to implement it.
-
-### Implementation in `challenge.py`
-- Remember, you will set up the logic first in your `challenge.py` where you will gradually build your program by approaching it step by step, just like assembling a puzzle.
+### Application in 'challenge.py'
+Within your 'challenge.py', you will implement this logic. Start by defining your ranges clearly, then include steps to gather user input, check conditions, and print results accordingly. Remember, the goal is to understand how you are breaking down the problem into manageable parts.

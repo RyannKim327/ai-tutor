@@ -5,8 +5,8 @@ import createToken from "./create_token"
 export default async function postToFacebook(message: string) {
 	dotenv.config()
 
-	const PAGE_ID: string = process.env.PAGE_ID
-	const TOKEN: string = await createToken() as string
+	const PAGE_ID: string = process.env.PAGE_ID as string
+	const TOKEN: string = await createToken(process.env.FB_TOKEN as string) as string
 
 	try {
 		const url = `https://graph.facebook.com/${PAGE_ID}/feed`
@@ -19,5 +19,6 @@ export default async function postToFacebook(message: string) {
 		console.log("Posted")
 	} catch (e) {
 		console.error(e)
+		console.error(e?.error as string)
 	}
 }

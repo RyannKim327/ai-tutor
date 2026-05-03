@@ -20,6 +20,7 @@ export default async function createToken(TOKEN: string) {
 			return response.data.data[0].access_token
 		} else {
 			console.error(response?.data as string)
+			throw new Error(response.data)
 		}
 	} catch (e) {
 		console.error(e)

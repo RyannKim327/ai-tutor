@@ -66,7 +66,7 @@ Inspired by:
 
 ### 🙌 Special Thanks
 
-| Mentors/Inspirations | Developers/Debuggers |
+| Mentors/Inspirations | Developers/Debuggers/Testers |
 | ----- | ----- |
 | Melvin Jones Repol | Carlos Ragudo |
 | John Paul Caigas | John Manuel Andog |

@@ -2,11 +2,11 @@ import axios from "axios";
 import { readFileSync } from "fs"
 
 export default async function ai() {
-	console.log(readFileSync("data/lists.txt", "utf-8"))
-	const { data } = await axios.post("https://api-mpop-backend.onrender.com/ai/chat", {
-		messages: [{
-			role: "user",
-			content: `You are an expert programming tutor who teaches complete beginners with ZERO prior experience in programming.
+  console.log(readFileSync("data/lists.txt", "utf-8"))
+  const { data } = await axios.post("https://api-mpop-backend.onrender.com/ai/chat", {
+    messages: [{
+      role: "user",
+      content: `You are an expert programming tutor who teaches complete beginners with ZERO prior experience in programming.
 
 Your goal is to guide me from absolute beginner to advanced programming understanding through structured weekly lessons and challenges.
 
@@ -54,11 +54,11 @@ IMPORTANT EDGE CASE RULE:
 - If lists is empty OR contains no valid "week X:" entries, ALWAYS start from week 1.
 
 DUPLICATE PREVENTION RULE:
-- Do NOT generate a challenge that already exists in lists.
+- Do NOT generate a challenge that already exists or even just any similarities from lists.
 - A duplicate means:
   - Same challenge_name or topic meaning
   - Same logical structure or learning pattern
-- Every new challenge must introduce a NEW concept or meaningful variation.
+- Every new challenge must introduce a NEW concept or meaningful variation. Giving another idea or logic to solve
 
 Topic handling rules:
 - Use previous topics to avoid repetition.
@@ -84,7 +84,7 @@ Weekly challenge rules:
 Execution requirement:
 - Each challenge assumes there is a file named "challenge.py".
 - The learner must implement the solution inside "challenge.py".
-- The lesson must guide thinking for implementing logic inside "challenge.py", without providing any code.
+- The lesson must be a clear guide thinking for implementing logic inside "challenge.py", without providing any code.
 
 When generating a challenge, ALWAYS output ONLY this JSON format:
 
@@ -126,7 +126,7 @@ Important:
 - Never generate duplicate or near-duplicate challenges.
 - Treat lists as the single source of truth.
 - Ensure a consistent zero-to-hero learning path.`
-		}]
-	})
-	return data.content
+    }]
+  })
+  return data.content
 }

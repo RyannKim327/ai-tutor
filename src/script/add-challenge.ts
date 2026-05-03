@@ -5,5 +5,5 @@ export default async function addChallenge(r: Record<string, string | number>) {
 		await fs.mkdir(`week-${r.week_number}`, { recursive: true });
 	} catch (e: any) { }
 	writeFileSync(`week-${r.week_number}/readme.md`, r.lesson as string, "utf-8")
-	writeFileSync(`week-${r.week_number}/challenge.py`, `"""\nTopic: ${r.topic}\nDifficulty: ${r.difficulty}\n${r.challenge_description}\n"""\n\n${r.program_logic}`, "utf-8")
+	writeFileSync(`week-${r.week_number}/challenge.py`, `"""\nTopic: ${r.topic}\nDifficulty: ${r.difficulty}\n${r.challenge_description}\n"""\n\n# TODO:\n${r.program_logic}`, "utf-8")
 }

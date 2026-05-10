@@ -1,29 +1,22 @@
-# Understanding Number Ranges
+# Classifying Numbers: Prime or Not
 
-In our previous lesson, we categorized numbers as odd or even. Now, we're going to take a step further and classify numbers based on their numerical range: low, medium, and high. 
+In this lesson, we will talk about something called prime numbers. A prime number is a special kind of number that can only be divided evenly by 1 and itself. For example, the number 5 is prime because it can only be divided by 1 and 5 without leaving a remainder. But the number 6 is not prime because it can be divided evenly by 1, 2, 3, and 6.
 
-## What Does This Mean?
-Think of it like grading in school. Imagine you have scores from a test:
-- **Low score**: A score below 50 
-- **Medium score**: A score between 50 and 75 
-- **High score**: A score above 75 
+### Understanding Prime Numbers with an Analogy
+Think of prime numbers like unique ingredients in a recipe. If you have an ingredient that can only work with one specific dish (1 and itself), it's like a prime number. If an ingredient can fit in many different recipes (like being divisible by numbers other than itself), then it’s not prime.
 
-Similar to this grading system, we can set different boundaries for different ranges of numbers. For instance:
-- **Low Range**: Numbers from 1 to 33
-- **Medium Range**: Numbers from 34 to 66
-- **High Range**: Numbers from 67 to 100
+### How to Think About the Challenge
+Your task is to determine if a given number is prime or not by following some simple logical steps:
+1. **Identify the number:** Think of any number you want to check.
+2. **Function Setup:** Instead of coding, think about how a machine might check if this number is prime.
+3. **Start with Simple Checks:** Understand that any number less than 2 is automatically not prime.
+4. **Testing for Factors:** Imagine checking every number from 2 to just below the number in question to see if it divides evenly.
+5. **Conclusion:** If you find another number that divides it evenly, you know it's not prime. If you check everything and find none, then it's prime!
 
-## How to Approach the Problem
-1. **Identify the Ranges**: First, decide what the boundaries for low, medium, and high are. You can think of these as fences or walls that separate one area from another.
-2. **Gather Your Numbers**: You might have a set of numbers (like exam scores) that you need to classify. 
-3. **Classify Each Number**: For each number, determine where it fits. This is like asking, “Is this score low, medium, or high?”
-4. **Record the Results**: Once you classify the numbers, print them out or keep track of them in a list. 
+### Applying This Logic Inside `challenge.py`
+Inside your `challenge.py` file, you will map out these logical steps as comments. You won’t write executable code just yet, but you'll plan how to organize the thought process for solving this task.
 
-## Applying Learning Inside 'challenge.py'
-In 'challenge.py', your goal for this week is to implement the structure for classifying these numbers. Even though you won’t be writing code this week, you will think about how to:
-- List numbers you want to check.
-- Set your boundaries for classification.
-- Create a plan to loop through each number and decide where it fits.
+### Estimated Completion Time
+This challenge should take approximately 1-2 weeks, with time allocated each day to think about each step clearly. Focus on grasping each concept thoroughly.
 
-## Estimated Completion Time
-This week's challenge should take about **4-5 days** of practice, allowing time to think and plan your logic thoroughly.
+By the end of this week, you should feel more comfortable with classifying numbers and understanding what makes them unique. Get ready for some exciting steps in the next lessons!

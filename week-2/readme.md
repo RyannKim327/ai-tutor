@@ -1,22 +1,29 @@
-# Classifying Numbers by Range
+# Understanding Number Ranges
 
-In this lesson, we will explore how to classify numbers into different categories based on their size. This is similar to how we classify apples by size: small, medium, and large. For instance, if you go to a grocery store, you might see apples that are labeled as small, medium, or large based on their weight or diameter.
+In our previous lesson, we categorized numbers as odd or even. Now, we're going to take a step further and classify numbers based on their numerical range: low, medium, and high. 
 
-### Understanding Number Ranges
+## What Does This Mean?
+Think of it like grading in school. Imagine you have scores from a test:
+- **Low score**: A score below 50 
+- **Medium score**: A score between 50 and 75 
+- **High score**: A score above 75 
 
-Just like in the grocery store, numbers can also be grouped into 'categories' or 'ranges'. The ranges we will use are as follows:
-- **Small**: Numbers from 1 to 10
-- **Medium**: Numbers from 11 to 20
-- **Large**: Numbers from 21 and above.
+Similar to this grading system, we can set different boundaries for different ranges of numbers. For instance:
+- **Low Range**: Numbers from 1 to 33
+- **Medium Range**: Numbers from 34 to 66
+- **High Range**: Numbers from 67 to 100
 
-### How to Think About It
-In this task, your goal is to determine which category a number belongs to. You will need to think about:
-1. How to describe ranges (i.e., what is included in small, medium, and large).
-2. How to check which range a number falls into. For instance, if I pick the number 15, you should know it's 'medium'. 
-3. How to express this thought process step-by-step in your program.
+## How to Approach the Problem
+1. **Identify the Ranges**: First, decide what the boundaries for low, medium, and high are. You can think of these as fences or walls that separate one area from another.
+2. **Gather Your Numbers**: You might have a set of numbers (like exam scores) that you need to classify. 
+3. **Classify Each Number**: For each number, determine where it fits. This is like asking, “Is this score low, medium, or high?”
+4. **Record the Results**: Once you classify the numbers, print them out or keep track of them in a list. 
 
-### Estimated Completion Time
-This challenge should take approximately 3-5 days. Spend the first couple of days thinking through how to structure your logic, and the rest practicing by classifying various numbers.
+## Applying Learning Inside 'challenge.py'
+In 'challenge.py', your goal for this week is to implement the structure for classifying these numbers. Even though you won’t be writing code this week, you will think about how to:
+- List numbers you want to check.
+- Set your boundaries for classification.
+- Create a plan to loop through each number and decide where it fits.
 
-### Application in 'challenge.py'
-Within your 'challenge.py', you will implement this logic. Start by defining your ranges clearly, then include steps to gather user input, check conditions, and print results accordingly. Remember, the goal is to understand how you are breaking down the problem into manageable parts.
+## Estimated Completion Time
+This week's challenge should take about **4-5 days** of practice, allowing time to think and plan your logic thoroughly.

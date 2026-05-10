@@ -1,12 +1,13 @@
 """
-Topic: Classifying Numbers by Range
+Topic: Number Classification
 Difficulty: medium
-Classify numbers into different ranges: low, medium, and high based on specific criteria.
+Determine if a number is prime or not, helping you understand basic number classification.
 """
 
 # TODO:
-# Define the ranges for low, medium, and high numbers
-# Get a list of numbers to classify
-# For each number, check in which range it falls
-# Print or store the result accordingly
-# Ensure to handle edge cases where numbers might lie on the boundary of ranges
+# Step 1: Define a number to check.
+# Step 2: Create a function to determine if the number is prime.
+# Step 3: Check if the number is less than 2; if so, it's not prime.
+# Step 4: Use a loop to check for factors from 2 to the square root of the number.
+# Step 5: If any factor divides evenly, it's not prime; otherwise, it is prime.
+# Step 6: Display the result (prime or not).

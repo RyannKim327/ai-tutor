@@ -1,4 +1,4 @@
 Week 1: Basic Counting and Classification (Odd or Even)
-Week 2: Classifying/Understanding Numbers by Range
-Week 3: Understanding Number Ranges
+Week 2: Understanding Number Ranges
+Week 3: Classifying Numbers: Prime or Not
 Week 4:

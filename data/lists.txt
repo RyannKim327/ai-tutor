@@ -1,5 +1,5 @@
-Week 1: Basic Counting and Classification (Odd or Even)
-Week 2: Understanding Number Ranges
-Week 3: Classifying Numbers: Prime or Not
-Week 4: Classifying Numbers: Positive, Negative, or Zero
-Week 4:
+Week 1: Basic Counting and Classification (Odd or Even) [easy]
+Week 2: Understanding Number Ranges [medium]
+Week 3: Classifying Numbers: Prime or Not [hard]
+Week 4: Understanding Factors and Multiples [easy]
+Week 5:

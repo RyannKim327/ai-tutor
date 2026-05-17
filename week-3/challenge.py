@@ -1,14 +1,13 @@
 """
-Topic: Basic Number Classification
-Difficulty: easy
-Determine if a number is positive, negative, or zero based on its value.
+Topic: Number Classification
+Difficulty: medium
+Determine if a number is prime or not, helping you understand basic number classification.
 """
 
 # TODO:
-# Step 1: Identify a number to classify.
-# Step 2: Check if the number is greater than zero.
-# Step 3: If yes, the number is positive.
-# Step 4: Otherwise, check if the number is less than zero.
-# Step 5: If yes, the number is negative.
-# Step 6: If neither, it must be zero.
-# Step 7: Print the classification.
+# Step 1: Define a number to check.
+# Step 2: Create a function to determine if the number is prime.
+# Step 3: Check if the number is less than 2; if so, it's not prime.
+# Step 4: Use a loop to check for factors from 2 to the square root of the number.
+# Step 5: If any factor divides evenly, it's not prime; otherwise, it is prime.
+# Step 6: Display the result (prime or not).

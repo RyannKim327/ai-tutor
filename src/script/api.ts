@@ -38,7 +38,8 @@ Example:
 week 1: sample challenge  
 week 2: basic decision making  
 week 3: pattern recognition  
-
+...
+  
 Rules for parsing lists (VERY IMPORTANT):
 
 - Extract the week number from the LEFT side of ":".

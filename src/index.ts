@@ -14,6 +14,7 @@ async function main() {
 		postToFacebook(`🚀🔥 WEEK #${ext.week_number} JUST DROPPED IN AI TUTOR!\n\nThis week’s challenge: ${ext.challenge_name} 💡⚡\n\nThink you’ve got what it takes? Dive in NOW:\nhttps://github.com/RyannKim327/ai-tutor/tree/main/week-${ext.week_number}\n\nAlready forked? Sync your repo and keep pushing forward 💻🔥`)
 		await addChallenge(ext)
 	} catch (e) {
+		console.log(e)
 		main()
 	}
 }

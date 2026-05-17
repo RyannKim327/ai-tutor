@@ -33,12 +33,6 @@ Format of lists:
 Each line follows this structure:
 
 week {number}: {topic or challenge name}
-
-Example:
-week 1: sample challenge  
-week 2: basic decision making  
-week 3: pattern recognition  
-...
   
 Rules for parsing lists (VERY IMPORTANT):
 

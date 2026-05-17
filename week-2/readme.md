@@ -1,29 +1,19 @@
 # Understanding Number Ranges
 
-In our previous lesson, we categorized numbers as odd or even. Now, we're going to take a step further and classify numbers based on their numerical range: low, medium, and high. 
+In this lesson, we will explore how to check if a number falls within a specific range. This is essential in programming because it helps us control the flow of our programs based on conditions.
 
-## What Does This Mean?
-Think of it like grading in school. Imagine you have scores from a test:
-- **Low score**: A score below 50 
-- **Medium score**: A score between 50 and 75 
-- **High score**: A score above 75 
+## Concept Explanation
 
-Similar to this grading system, we can set different boundaries for different ranges of numbers. For instance:
-- **Low Range**: Numbers from 1 to 33
-- **Medium Range**: Numbers from 34 to 66
-- **High Range**: Numbers from 67 to 100
+Imagine you are measuring the height of plants. You know that the plants must be between 10 cm and 50 cm to be considered healthy. If a plant measures 45 cm, it is healthy because it is within the limits set. If it measures 5 cm, it is unhealthy because it is below the minimum height. In programming, we do something similar when checking if a number is within a defined range.
 
-## How to Approach the Problem
-1. **Identify the Ranges**: First, decide what the boundaries for low, medium, and high are. You can think of these as fences or walls that separate one area from another.
-2. **Gather Your Numbers**: You might have a set of numbers (like exam scores) that you need to classify. 
-3. **Classify Each Number**: For each number, determine where it fits. This is like asking, “Is this score low, medium, or high?”
-4. **Record the Results**: Once you classify the numbers, print them out or keep track of them in a list. 
+### How to Approach the Challenge
+1. **Define the Number:** Start by knowing the number you want to check. This could be any number you select.
+2. **Set the Range:** Determine what your minimum and maximum values are. In our plant example, it was 10 cm and 50 cm.
+3. **Comparison Logic:** Check if the number is greater than or equal to the minimum value and less than or equal to the maximum value. This will help you understand if it is 'within range.'
+4. **Output the Result:** Decide how you want to let others know the result of your checks. You may display a message stating 'within range' or 'out of range.'
 
-## Applying Learning Inside 'challenge.py'
-In 'challenge.py', your goal for this week is to implement the structure for classifying these numbers. Even though you won’t be writing code this week, you will think about how to:
-- List numbers you want to check.
-- Set your boundaries for classification.
-- Create a plan to loop through each number and decide where it fits.
+### Estimated Completion Time
+This challenge should take approximately 1 week to complete if you follow these steps gradually over the days.
 
-## Estimated Completion Time
-This week's challenge should take about **4-5 days** of practice, allowing time to think and plan your logic thoroughly.
+### Applying This in `challenge.py`
+In the file named `challenge.py`, you will need to create a structured approach using the steps outlined above as comments. This will help you think through the logic without diving into actual code right away. Start implementing these thoughts in a step-by-step manner.

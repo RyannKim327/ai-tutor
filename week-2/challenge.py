@@ -1,12 +1,12 @@
 """
-Topic: Classifying Numbers by Range
-Difficulty: medium
-Classify numbers into different ranges: low, medium, and high based on specific criteria.
+Topic: Number Ranges
+Difficulty: easy
+Determine if a number falls within a specified range or not.
 """
 
 # TODO:
-# Define the ranges for low, medium, and high numbers
-# Get a list of numbers to classify
-# For each number, check in which range it falls
-# Print or store the result accordingly
-# Ensure to handle edge cases where numbers might lie on the boundary of ranges
+# TODO: Define the number to check
+# TODO: Define the minimum and maximum values of the range
+# TODO: Check if the number is greater than or equal to the minimum
+# TODO: Check if the number is less than or equal to the maximum
+# TODO: Print or return the result as 'within range' or 'out of range'

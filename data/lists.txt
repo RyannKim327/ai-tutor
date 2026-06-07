@@ -2,4 +2,6 @@ Week 1: Basic Counting and Classification (Odd or Even) [easy]
 Week 2: Understanding Number Ranges [medium]
 Week 3: Classifying Numbers: Prime or Not [hard]
 Week 4: Understanding Factors and Multiples [easy]
-Week 5:
+Week 5: Understanding Number Patterns [easy]
+Week 6: Understanding Basic Arithmetic Operations [easy]
+Week 7: Understanding Positive and Negative Numbers [easy]

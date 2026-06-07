@@ -5,6 +5,6 @@ export default function add(week: number, topic: string, difficulty: string) {
 	if (data.endsWith('\n')) {
 		data = data.substring(0, data.length - 1).trim()
 	}
-	data += ` ${topic} [${difficulty}]\nWeek ${week + 1}:`
+	data += `\nWeek ${week} ${topic} [${difficulty}]`
 	writeFileSync("data/lists.txt", data, "utf-8")
 }

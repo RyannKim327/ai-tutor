@@ -19,6 +19,7 @@ jobs:
     env:
       PAGE_ID: ${{ secrets.PAGE_ID }}
       FB_TOKEN: ${{ secrets.FB_TOKEN }}
+      AI_TOKEN: ${{ secrets.AI_TOKEN }}
 
     steps:
       - name: Checkout repository

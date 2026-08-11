@@ -8,8 +8,8 @@ async function main() {
   try {
     const api = await ai()
     const ext = extractor(api)
-    if (ext.week_number === undefined)
-      throw Error("No Week")
+    if (ext.week_number === undefined || !ext.challenge_name || !ext.difficulty)
+      throw Error("No Week or incomplete challenge data")
     add(ext.week_number, ext.challenge_name, ext.difficulty)
     // postToFacebook(`🚀🔥 WEEK #${ext.week_number} JUST DROPPED IN AI TUTOR!\n\nThis week’s challenge: ${ext.challenge_name} 💡⚡\n\nThink you’ve got what it takes? Dive in NOW:\nhttps://github.com/RyannKim327/ai-tutor/tree/main/week-${ext.week_number}\n\nAlready forked? Sync your repo and keep pushing forward 💻🔥`)
     await addChallenge(ext)

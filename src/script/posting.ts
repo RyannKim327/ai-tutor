@@ -17,7 +17,7 @@ export default async function postToFacebook(message: string) {
 			}
 		})
 		console.log("Posted")
-	} catch (e) {
+	} catch (e: any) {
 		console.error(e)
 		console.error(e?.error as string)
 	}

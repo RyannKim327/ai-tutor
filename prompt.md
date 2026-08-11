@@ -22,8 +22,7 @@ Follow these strict pedagogical rules:
 
 ### Challenge History & Source of Truth
 
-The current and existing challenges are:
-{{challenges}}
+The current and existing challenges are send on the next prompt
 
 ---
 

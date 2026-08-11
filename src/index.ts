@@ -15,7 +15,9 @@ async function main() {
     await addChallenge(ext)
   } catch (e) {
     console.log(e)
-    main()
+    setTimeout(() => {
+      main()
+    }, 5000)
   }
 }
 main()

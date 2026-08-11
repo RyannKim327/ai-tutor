@@ -40,7 +40,7 @@ Each week includes:
 
 - You can:
   - Sync your fork weekly to get the latest updates  
-  - Or follow updates from the [**MPOP Reverse II Facebook page**](https://fb.me/MPOP.2016) 
+  - Or follow updates from the [**MPOP Reverse II Facebook page**](https://fb.me/themasterpieceofpaper) or [**RySes Malabanan**](https://fb.me/RySesMalabanan) 
 
 ---
 
